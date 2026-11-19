@@ -1,43 +1,53 @@
+
 body {
     background-color: #eeeeee;
-    font-family: Arial, sans-serif;
+    font-family: "Trebuchet MS", sans-serif;
     margin: 0;
     padding: 0;
     color: #222222;
 }
 
 header {
-    background-color: #111111;
-    color: white;
+    background-color: #eeeeee;
+    color: #111111;
     text-align: center;
-    padding: 25px;
+    padding: 20px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 34px;
+    letter-spacing: 2px;
 }
 
 nav {
     background-color: #c9a227;
-    text-align: center;
-    padding: 15px;
+    width: 180px;
+    min-height: 100vh;
+    padding: 20px 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
 }
 
 nav a {
+    display: block;
     color: #111111;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 18px;
+    padding: 15px 10px;
+    margin-bottom: 10px;
 }
 
 nav a:hover {
+    background-color: #111111;
     color: white;
 }
 
 main {
-    width: 85%;
-    margin: 25px auto;
+    margin-left: 200px;
+    padding: 20px;
 }
 
 section {
@@ -56,13 +66,29 @@ section h2 {
 article {
     background-color: #eeeeee;
     padding: 15px;
-    margin: 12px 0;
+    margin: 15px 0;
     border-radius: 6px;
 }
 
 article h3 {
-    margin-top: 0;
     color: #333333;
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+article img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    object-fit: cover;
 }
 
 footer {
@@ -70,4 +96,5 @@ footer {
     color: white;
     text-align: center;
     padding: 18px;
+    margin-left: 200px;
 }
